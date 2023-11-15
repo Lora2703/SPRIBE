@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="3">
+
+    <test verbose="2" preserve-order="true" name="SPRIBE">
+        <classes>
+            <class name="apiTests.InterviewTestAppApiTests">
+                <methods>
+                    <include name="createPlayer"></include>
+                    <include name="getPlayerByPlayerId"></include>
+                    <include name="updatePlayer"></include>
+                    <include name="getAllPlayers"></include>
+                    <include name="deletePlayer"></include>
+                </methods>
+            </class>
+            <class name="apiTests.CreatingPlayerTests">
+                <methods>
+                    <include name="createPlayer"></include>
+                    <include name="deletePlayer"></include>
+                </methods>
+            </class>
+            <class name="apiTests.DeletingPlayerTests">
+                <methods>
+                    <include name="createPlayer"></include>
+                    <include name="deletePlayer"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
